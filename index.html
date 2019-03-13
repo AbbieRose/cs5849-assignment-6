@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Calculator Demo
+		</title>
+		<link rel="stylesheet" href="calculator.css" type="text/css">
+	</head>
+	<body>
+		<div id="calculator">
+			<h1>calc U l8r</h1>
+			<div class="calculator_row">
+				<input id="number_input">
+			</div>
+			<div class="calculator_row">
+				<button id="button7" class="calcButton row1 col1">7</button>
+				<button id="button8" class="calcButton row1 col2">8</button>
+				<button id="button9" class="calcButton row1 col3">9</button>
+				<button id="buttonDivide" class="calcButton row1 col4 function">/</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button4" class="calcButton row2 col1">4</button>
+				<button id="button5" class="calcButton row2 col2">5</button>
+				<button id="button6" class="calcButton row2 col3">6</button>
+				<button id="buttonMultiply" class="calcButton row2 col4 function">*</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button1" class="calcButton row3 col1">1</button>
+				<button id="button2" class="calcButton row3 col2">2</button>
+				<button id="button3" class="calcButton row3 col3">3</button>
+				<button id="buttonAdd" class="calcButton row3 col4 function">+</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button0" class="calcButton row4 col1">0</button>
+				<button id="buttonClear" class="calcButton row4 col2 meta">C</button>
+				<button id="buttonEquals" class="calcButton row4 col3 meta">=</button>
+				<button id="buttonSubtract" class="calcButton row4 col4 function">-</button>
+			</div>
+		</div>
+		<div id="comments">
+			<h2>About this app</h2>
+			<h4>Protocol: </h4>
+			<p>
+				I will compare a 3-key interface and a 1-key scanning interface. In order to do so, we’ll test the following equations:
+			</p>
+			<ul>
+				<li>7 + 3 = (10)</li>
+				<li>+ 19 = (29)</li>
+				<li>– 1 = (28)</li>
+				<li>– / 7 = (4)</li>
+				<li>– C 80 / 2 = (40)</li>
+			</ul>
+
+			<p>
+				I picked these because they provide a range of keys all over the keyboard that require a good bit of navigation. 
+				I’ll record the number of errors that occur, and the amount of time each test takes. 
+			</p>
+			
+			<h4>3-key instructions</h4>
+			<ul>
+				<li>a => next selection</li>
+				<li>s => previous selection</li>
+				<li>b => click</li>
+			</ul>
+
+			<h4>1-key instructions</h4>
+			<p>Press p to start scanning, press p to select</p>
+
+			<h4>Results</h4>
+			I tested with two participants. Each participant tested 1 Key and 3 Key with their dominant hand. They completed each of the conditions 3 times each.
+			Both of these took longer than I expected. The 3 key one was difficult because It only went forwards and backwards
+			but not up and down. However it had fewer mistakes than the 1 key one. The 1 key was more difficult attention-wise. Participants seemed easily distracted
+			while waiting for the selection to come around. That attentional element may have been the reason for increase in errors. It also took longer because of
+			the mandatory half second wait.
+
+			Below are charts for each participant's tests:
+			<h6>Participant 1 3k </h6>
+			<img src="P1K3.png" alt="3K test for participant 1">
+
+			<h6>Participant 1 1k </h6>
+			<img src="P1K1.png" alt="1K test for participant 1">
+
+			<h6>Participant 2 3k </h6>
+			<img src="P2K3.png" alt="3K test for participant 2">
+
+			<h6>Participant 2 1k </h6>
+			<img src="P2K1.png" alt="1K test for participant 2">
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="calculator.js" type="text/javascript"></script>
+		
+	</body>
+</html>
